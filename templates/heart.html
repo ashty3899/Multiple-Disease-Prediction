@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<div class="main-box">
+    <div class="diseases container text-center">
+
+        <h1 class="text-uppercase">Heart</h1>
+
+        <form id="h_form" action="/heart" method="post" class="text-center">
+            {% csrf_token %}
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-6">
+                        <div class="input"><input type="number" name="h_age" min="20" max="80" id=""
+                                placeholder="Age (20-80)" required></div>
+                    </div>
+                    <div class="col-6">
+                        <div class="input"><input type="number" name="gender" min="0" max="1" id=""
+                                placeholder="Gender(Male:1, Female:0" required>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="input"><input type="number" name="cpt" min="0" max="3" id=""
+                                placeholder="Chest pain type (0-3)" required></div>
+                    </div>
+                    <div class="col-6">
+                        <div class="input"><input type="number" name="rbp" min="90" max="200" id=""
+                                placeholder="Resting blood pressure in mmHg (90-200)" required></div>
+                    </div>
+                    <div class="col-6">
+                        <div class="input"><input type="number" name="sc" min="125" max="550" id=""
+                                placeholder="Serum cholesterol in mg/dl (125-550)" required></div>
+                    </div>
+                    <div class="col-6">
+                        <div class="input"><input type="number" name="fbs" min="0" max="1" id=""
+                                placeholder="Fasting blood sugar>120 mg/dl (Yes:1 No:0)" required>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="input"><input type="number" name="recg" min="0" max="2" id=""
+                                placeholder="Resting electrocardiographic results (0-2)" required>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="input"><input type="number" name="maxrate" min="70" max="200" id=""
+                                placeholder="Maximum heart rate achieved (70-200)" required>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="input"><input type="number" name="exag" min="0" max="1" id=""
+                                placeholder="Exercise included angina (Yes:1 No:0)" required>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="input"><input type="number" name="std" step="0.1" min="0.0" max="6.2" id=""
+                                placeholder="ST depression induced by exercise (0.0-6.2)" required>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="input"><input type="number" name="slope" min="0" max="2" id=""
+                                placeholder="The slope of the peak exercise (0-2)" required>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="input"><input type="number" name="n_vessel" min="0" max="3" id=""
+                                placeholder="Number of major vessels (0-3) colored" required>
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="input"><input class="text-center" type="number" name="thal" min="0" max="3" id=""
+                                placeholder="Thal (null:0, fixed-defect:1, normal:2, reversible:3)" required>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                        <button type="submit" class="btn-s btn btn-outline-dark fw-bold" id="submit_btn">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+{% endblock %}

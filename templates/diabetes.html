@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<div class="main-box">
+    <div class="diseases container text-center">
+
+        <h1 class="text-uppercase">Diabetes</h1>
+
+        <form id="d_form" action="/diabetes" method="post" class="text-center">
+            {% csrf_token %}
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-6">
+                        <div class="input"><input type="number" name="num_p" min="0" max="15"
+                                placeholder="Number of Pregnancies (0-15)" required>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="input"><input type="number" name="glucose" min="50" max="200"
+                                placeholder="Glucose (50-200)" required></div>
+                    </div>
+                    <div class="col-6">
+                        <div class="input"><input type="number" name="bp" min="50" max="120"
+                                placeholder="Blood Pressure (50-120)" required></div>
+                    </div>
+                    <div class="col-6">
+                        <div class="input"><input type="number" name="st" min="0" max="90"
+                                placeholder="Skin Thickness (0-90)" required></div>
+                    </div>
+                    <div class="col-6">
+                        <div class="input"><input type="number" name="Insulin" min="0" max="600"
+                                placeholder="Insulin Level (0-600)" required>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="input"><input type="number" name="bmi" step="0.1" min="0" max="65"
+                                placeholder="Body Mass Index (0-65)" required>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="input"><input type="number" name="dpf" step="0.001" min="0" max="2.5"
+                                placeholder="Diabetes Pedigree Function (0.0-2.500)" required>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="input"><input type="number" name="age" min="20" max="80" placeholder="Age (20-80)"
+                                required></div>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                        <button type="submit" class="btn-s btn btn-outline-dark fw-bold" id="submit_btn">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+{% endblock %}

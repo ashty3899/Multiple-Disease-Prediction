@@ -1,0 +1,134 @@
+:root {
+  --primary: #05386b; /* dark blue */
+  /* --primary: #5CDB95;*/ /* light green */
+  /* --primary: #1f8af5; */ /* light blue */
+  /* --primary: #4c1e7e; */ /* viloet*/
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: var(--primary);
+}
+
+h1 {
+  color: var(--primary);
+}
+
+
+
+
+.diseases {
+  margin: 50px 0;
+  padding: 0 50px;
+}
+
+form {
+  margin: 25px 14%;
+  /* width: 50%; */
+  border-radius: 5px;
+  /* background: #743facd7; */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.container .row {
+  margin: 10px 15px;
+  padding: 30px 0;
+}
+.input {
+  font-size: 16px;
+  padding: 0;
+  color: black;
+  margin: 10px 0;
+}
+
+.input input {
+  width: 100%;
+  padding: 10px 8px;
+  border-radius: 5px;
+  border: solid var(--primary) 2px;
+  background-color: white;
+}
+
+#submit_btn {
+  background-color: var(--primary);
+  color: white;
+}
+
+
+
+.main {
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  border-radius: 10px;
+  width: 80%;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.main-con {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  /* border: solid 1px gray; */
+  padding: 0;
+}
+
+.main-img img {
+  object-fit: cover;
+  width: 80%;
+  /* border: solid 1px gray; */
+  float: right;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.d-card {
+  height: 280px;
+  margin: 0 10px;
+  display: grid;
+  justify-self: center;
+  font-size: large;
+  justify-items: center;
+  border-radius: 5px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.d-card img {
+  object-fit: cover;
+  width: 60%;
+}
+.d-card p {
+  display: grid;
+  align-self: flex-end;
+}
+.info-box {
+  display: grid;
+  /* border: solid 1px gray; */
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.info {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 20px 30px;
+  border-radius: 5px;
+  margin: 20px 10px;
+}
+
+.info p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* form */
+
+/* form */

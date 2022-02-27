@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<div class="main">
+    <div class="main-con">
+        <div class="main-txt">
+            <h1>This is a basic Machine Learning and Deep Learning based WebApp</h1>
+            <p class="mt-4 fs-5">These Machine Learning models and Deep Leaning models are trained on large datasets
+                and thousands of
+                images.
+            </p>
+        </div>
+        <div class="main-img">
+            <img src=" {% static 'assest/img1.jpg' %}">
+        </div>
+    </div>
+    <div class="my-4 text-center">
+        <h2 class="my-4">Model Accuracies</h2>
+        <ul class="row row-cols-sm-1 g-2 row-cols-md-2 row-cols-lg-3">
+            <li class="col">
+                <div class="d-card"><img src=" {% static 'assest/3.png' %}">
+                    <p>Diabetes Model: 89.07%</p>
+                </div>
+            </li>
+            <li class="col">
+                <div class="d-card"><img src="{% static 'assest/2.png' %}">
+                    <p>Heart Disease Model: 85%</p>
+                </div>
+            </li>
+            <li class="col">
+                <div class="d-card"><img src="{% static 'assest/1.png' %}" alt="">
+                    <p>Liver Disease Model: 84%</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="my-5">
+        <h3 class="text-center">Information about the Diseases which this webApp can predict</h3>
+        <div class="info-box my-4">
+            <div class="info">
+                <h4>Diabetes</h4>
+                <p>Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high.
+                    Blood glucose is your main source of energy and comes from the food you eat. Insulin, a hormone made
+                    by the pancreas, helps glucose from food get into your cells to be used for energy Sometimes your
+                    body doesn't make enough or any insulin or doesn't use insulin well. Glucose then stays in your
+                    blood and doesn't reach your cells.
+                    Symptoms of this disease are Urinating often, Feeling very thirsty, Extreme fatigue and Blurry
+                    vision. </p>
+
+            </div>
+            <div class="info">
+                <h4>Heart disease</h4>
+                <p>Symptoms of heart disease include chest pain, chest tightness, chest pressure and chest discomfort
+                    (angina) Shortness of breath Pain, numbness, weakness or coldness in your legs or arms if the blood
+                    vessels in those parts of your body are narrowed Pain in the neck, jaw, throat, upper abdomen
+                    or back.</p>
+            </div>
+            <div class="info">
+
+                <h4>Liver disease</h4>
+                <p>Symptoms of liver disease can vary, but they often include swelling of the abdomen and legs, bruising
+                    easily, changes in the color of your stool and urine, and jaundice, or yellowing of the skin and
+                    eyes. Sometimes there are no symptoms. Tests such as imaging tests and liver function tests can
+                    check for liver damage and help to diagnose liver diseases.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
